@@ -1,1 +1,53 @@
 @charset "UTF-8";
+
+/* MOBILE FIRST */
+
+/*
+paletas de cores
+verde: #49a09d
+Lilas: #5f2c82
+*/
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    transition: width 0.5s, height 0.5s; /* aqui quando mudar o tamnho do mobile first para as outras tela a transicao vai levar meio segundo */
+    -o-transition-timing-function: ease; /* ease da uma suavizada durante a transicao */
+}
+
+section#login > div#photo {
+    background: #5f2c82 url(../imagens/pexels-christopher-farrugia-3581878.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+
+
+}
+
