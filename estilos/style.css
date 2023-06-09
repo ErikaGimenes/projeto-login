@@ -31,13 +31,13 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: auto;
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s; /* aqui quando mudar o tamnho do mobile first para as outras tela a transicao vai levar meio segundo */
     -o-transition-timing-function: ease; /* ease da uma suavizada durante a transicao */
 }
@@ -46,8 +46,102 @@ section#login > div#photo {
     background: #5f2c82 url(../imagens/pexels-christopher-farrugia-3581878.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 200px;
+    height: 105px;
+}
 
+section#login > div#formulario {
+    display: block;
+    padding:10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-weight: lighter;
+    font-size: 1em;
+    color: #5f2c82;
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em; /* tamanho das imagens do email e da senha */
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+   
+}
+
+div.campo > input {
+    background-color: #49a09d;
+    font-size: 1em;
+    width: calc(100% - 44.5px);
+    height: 100%; /* 100% do tamanho da caixa que e a cor roxa que tava atras*/
+    border-radius: 8px;
+    border:none;
+    padding: 4px;
+    transform: translateY(-10px); /* aqui para subir ou descer o efeito que colocamos na caixa do email e senha */
+}
+
+div.campo > input:focus-within { /* quando usuario tiver digitando no email ou na senha ira ficar branco */
+    background-color: white;
 
 }
+
+form >input[type=submit] {
+    display: block; /* ocupar a linha inteira */
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* quando o curso passa em cima do borao enviar muda para maozinha */
+}
+
+form > input[type=submit]:hover {
+    background-color:#193635;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: white;
+    color: #193635;
+    border: 2px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #193635;
+    color: white;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
+
+
 

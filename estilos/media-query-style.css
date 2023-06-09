@@ -20,7 +20,7 @@
     }
 
     section#login > div#formulario {
-        float: right;
+        float: right; /*para qual lado o formulario vai ficar */
         width: 70%;
     }
 }
@@ -37,15 +37,22 @@
     }
 
     section#login > div#photo {
-        float: left; /* para qual lada a imagem ira fivar */
+        float: right; /* para qual lada a imagem ira fivar */
         width: 50%; /* tamanho da img em relacao ao tamanho da tela */
         height: 100%;
     }
 
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
     }
 
 }
 
+    div#formulario > h1 {
+        font-size: 2em;
+}
+
+    div#formulario > p {
+        font-size: 1.2em;
+}
